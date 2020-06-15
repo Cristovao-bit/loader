@@ -1,0 +1,68 @@
+/* 
+    Created on : 12/02/2019, 08:06:53
+    Author     : ML - Manutenção Lira
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #111;
+}
+
+h1{
+    text-align: center;
+    color: #eee;
+}
+
+.circular-progress{
+    margin: auto;
+    background: linear-gradient(0deg, #fff 50%, rgba(255,255,255, 0.2) 50%);
+    position: relative;
+    transform: rotate(90deg);
+    width: 12rem;
+    height: 12rem; 
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+::before{
+    content: "HTML5";
+    width: 12rem;
+    height: 12rem; 
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #111 content-box;
+    padding: .5em;
+    font-size: 2rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    line-height: 8rem;
+    transform: rotate(-90deg);
+}
+
+::after{
+    content: "50%";
+    width: 12rem;
+    height: 12rem; 
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(transparent 50%, #111 50%);
+    transform: scale(1.1) rotate(-90deg);
+    text-align: center;
+    color: #fff;
+    line-height: 13rem;
+}
